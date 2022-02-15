@@ -10,7 +10,7 @@ https://github.com/polodev/hasan-vi-workflow.git
 `cd` into directory folder and run `npm install`
 
 ## step 3   
-start writing markup in `index.html` file and start writing style in side `src/style.scss`
+start writing markup in `index.html` file and start writing style inside `src/style.scss`
 
 ## Available npm scripts in `package.json`
 ~~~js
