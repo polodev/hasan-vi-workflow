@@ -1,6 +1,219 @@
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap);
+/*-------------------------
+  Typography
+-------------------------*/
+html {
+  font-size: 10px;
+}
+
 body {
+  font-family: "Heebo", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #697883;
+  font-weight: 400;
+  height: 100%;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+  color: #082854;
+  margin: 0 0 25px;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1.12;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 1.24;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 1.24;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 1.27;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 1.32;
+}
+
+h6 {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+
+/*-------------------------
+  Faq Page Styles
+-------------------------*/
+.faq-accordion-area {
+  padding: 115px 0;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section-heading .laguage-switcher {
+  border: 2px solid #F8F8F8;
+  border-radius: 10px;
+  display: inline-block;
+  height: 55px;
+  line-height: 50px;
+}
+.section-heading .laguage-switcher .lang-btn {
+  padding: 0 58px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #082854;
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
+}
+.section-heading .laguage-switcher .lang-btn.active {
   background-color: #0eb4b4;
   color: #fff;
+}
+
+.faq-accordion .accordion-item {
+  border: 1px solid rgba(8, 40, 84, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.faq-accordion .accordion-item:last-child {
+  margin-bottom: 0;
+}
+.faq-accordion .accordion-item .accordion-header {
+  padding: 0 25px 0 20px;
+  position: relative;
+}
+.faq-accordion .accordion-item .accordion-button {
+  background-color: transparent;
+  padding: 18px 20px 10px 0;
+  border: none;
+  box-shadow: none;
+  font-size: 20px;
+  color: #082854;
+  border-bottom: 1px solid rgba(8, 40, 84, 0.05);
+  transition: 0.3s;
+}
+.faq-accordion .accordion-item .accordion-button:after {
+  display: none;
+}
+.faq-accordion .accordion-item .accordion-button:before {
+  content: "\f107";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  background-image: none;
+  position: absolute;
+  top: 22px;
+  right: 0;
+  line-height: 1;
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+.faq-accordion .accordion-item .accordion-button.collapsed {
+  padding: 20px 20px 20px 0;
+  border-bottom: 1px solid transparent;
+}
+.faq-accordion .accordion-item .accordion-button.collapsed:before {
+  top: 26px;
+  transform: rotate(0deg);
+}
+.faq-accordion .accordion-item .accordion-body {
+  padding: 20px 20px;
+}
+.faq-accordion .accordion-item .accordion-body p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/*-------------------------
+  Contact Styles
+-------------------------*/
+.contact-area {
+  padding: 90px 0 120px;
+  background: linear-gradient(186.8deg, rgba(232, 250, 250, 0.7) 0%, rgba(253, 236, 237, 0.7) 100%);
+  -webkit-backdrop-filter: blur(250px);
+          backdrop-filter: blur(250px);
+}
+
+.contact-info-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 90px 45px;
+  background-image: url("../images/shape-01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contact-info-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contact-info-box ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.contact-info-box ul li:last-child {
+  margin-bottom: 0;
+}
+.contact-info-box ul li .icon {
+  margin-right: 16px;
+  text-align: center;
+  height: 48px;
+  width: 48px;
+  line-height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #0eb4b4;
+  background: rgba(14, 180, 180, 0.07);
+}
+.contact-info-box ul li .number {
+  flex: 1;
+  line-height: 1.4;
+}
+
+.contact-form-box {
+  background-color: #fff;
+  padding: 40px 40px;
+}
+.contact-form-box .message-department {
+  display: inline-flex;
+  align-items: center;
+}
+.contact-form-box .message-department legend {
+  margin-bottom: 0;
+}
+.contact-form-box .message-department .radio-btn-group {
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map*/

@@ -1,0 +1,65 @@
+/*-------------------------
+  Typography
+-------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
+html {
+    font-size: 10px;
+}
+body {
+    font-family: $primary_font;
+    font-size: 18px;
+    line-height: 1.6;
+    color: $paragraph_black;
+    font-weight: 400;
+    height: 100%;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $primary_font;
+    font-weight: 500;
+    color: $secondary_color;
+    margin: 0 0 25px;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 1.12;
+}
+h2 {
+    font-size: 42px;
+    line-height: 1.24;
+}
+h3 {
+    font-size: 32px;
+    line-height: 1.24;
+}
+h4 {
+    font-size: 28px;
+    line-height: 1.27;
+}
+h5 {
+    font-size: 24px;
+    line-height: 1.32;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+}
