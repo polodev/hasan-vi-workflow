@@ -2,7 +2,7 @@
 ## March
 ## February
 2022-02-15 - 10:40PM - 1:20AM
-2022-02-16 - 8:50PM - 
+2022-02-16 - 8:50PM - 2:10AM (30 Minute Minus Hobe Break Nichilam)
 2022-02-17 - 
 2022-02-18 - 
 2022-02-19 - 
