@@ -1,5 +1,6 @@
 @import "variable.scss";
 @import "typography.scss";
+@import "form.scss";
 
 /*-------------------------
   Faq Page Styles
@@ -346,7 +347,7 @@
     background-position: bottom;
     .heading-title {
         font-size: 18px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
         span {
             color: $primary_color;
         }
@@ -545,6 +546,104 @@
         border-image: linear-gradient(94.61deg, rgba(14, 180, 180, 0.3) 0%, rgba(246, 113, 111, 0.2) 100%) 1;
         .terms-unorder-list {
             margin-bottom: 0;
+        }
+    }
+}
+
+/*-------------------------
+  Bimafy Claim Styles
+-------------------------*/
+.bima-claim-area {
+    padding: 120px 0;
+}
+.claim-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .section-title {
+        span {
+            color: $primary_color;
+        }
+    }
+    .claim-help {
+        margin-bottom: 25px;
+        color: $secondary_color;
+        a {
+            color: $primary_color;
+            font-weight: 500;
+            text-decoration: underline;
+            transition: .3s;
+            &:hover {
+                color: $secondary_color;
+            }
+        }
+    }
+}
+.claim-company {
+    text-align: center;
+    position: relative;
+    background: linear-gradient(131.83deg, rgba(178, 243, 243, .4) 0%, rgba(254, 236, 236, .3) 99.21%);
+    border: 2px solid;
+    border-image-source: linear-gradient(312.31deg, #B0F3F3 0%, #FEEBEB 100%);
+    border-radius: 10px;
+    .logo {
+        padding: 30px 35px;
+    }
+    .title {
+        font-size: 16px;
+        margin-bottom: 0;
+        background-color: #B2F3F3;
+        border-radius: 10px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+}
+
+.claim-form-header {
+    padding: 120px 0;
+    .header-content {
+        .logo {
+            margin-bottom: 20px;
+        }
+        .title {
+            background-color: #fff;
+            padding: 20px 30px;
+            box-shadow: 0px 40px 80px 0px #EBFCFCCC;
+            display: inline-block;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.claim-form-area {
+    padding: 120px 0;
+    background: linear-gradient(-138.72deg, rgba(255, 244, 245, 0.7) -34.17%, rgba(232, 250, 250, 0.7) 93.36%);
+}
+
+.claim-submit-form {
+    .form-info {
+        margin-bottom: 60px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .info-title {
+            margin-bottom: 20px;
+            color: $primary_color;
+            .sl-number {
+                color: $accent_color;
+                margin-right: 10px;
+            }
+        }
+        .inner {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+        }
+        .form-field {
+            .radio-btn-group {
+                margin-top: 7px;
+            }
         }
     }
 }

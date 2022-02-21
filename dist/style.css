@@ -28,7 +28,7 @@ h6 {
   font-family: "Heebo", sans-serif;
   font-weight: 500;
   color: #082854;
-  margin: 0 0 25px;
+  margin: 0 0 30px;
 }
 
 h1 {
@@ -69,6 +69,127 @@ p {
 
 a {
   text-decoration: none;
+}
+
+/*-------------------------
+  Form Default Styles
+-------------------------*/
+.form-control {
+  height: 48px;
+  background-color: #F8FAFC;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #697883;
+  border: none;
+  padding: 12px;
+  /* -- Placeholder -- */
+}
+.form-control::-moz-placeholder {
+  color: #697883;
+  /* Firefox */
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #697883;
+  /* Firefox */
+  opacity: 1;
+}
+.form-control::placeholder {
+  color: #697883;
+  /* Firefox */
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #697883;
+  opacity: 1;
+}
+.form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #697883;
+  opacity: 1;
+}
+.form-control:focus {
+  border: none;
+  box-shadow: none;
+  background-color: #F8FAFC;
+}
+.form-control.textarea {
+  height: auto;
+}
+
+.form-field {
+  margin-top: 24px;
+}
+.form-field label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #697883;
+  margin-bottom: 8px;
+}
+.form-field label span {
+  color: #F6716F;
+}
+
+.radio-btn-group {
+  display: flex;
+  align-items: center;
+}
+.radio-btn-group .form-check-radio {
+  margin-right: 20px;
+}
+
+.form-check-radio {
+  min-height: auto;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.form-check-radio:last-child {
+  margin-right: 0;
+}
+.form-check-radio .form-check-input {
+  height: 0;
+  width: 0;
+  margin: 0;
+  border: none;
+}
+.form-check-radio .form-check-input:focus {
+  box-shadow: none;
+}
+.form-check-radio .form-check-input:checked ~ label:before {
+  border-color: #0eb4b4;
+}
+.form-check-radio .form-check-input:checked ~ label:after {
+  opacity: 1;
+}
+.form-check-radio .form-check-label {
+  position: relative;
+  padding-left: 28px;
+  font-weight: 400;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.form-check-radio .form-check-label:before {
+  content: "";
+  height: 18px;
+  width: 18px;
+  border: 1px solid #697883;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+.form-check-radio .form-check-label:after {
+  content: "";
+  height: 12px;
+  width: 12px;
+  background-color: #0eb4b4;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 3px;
+  opacity: 0;
 }
 
 /*-------------------------
@@ -408,7 +529,7 @@ a {
 }
 .brand-logo-box .heading-title {
   font-size: 18px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .brand-logo-box .heading-title span {
   color: #0eb4b4;
@@ -596,6 +717,97 @@ a {
 }
 .privacy-policy .unorder-list-box .terms-unorder-list {
   margin-bottom: 0;
+}
+
+/*-------------------------
+  Bimafy Claim Styles
+-------------------------*/
+.bima-claim-area {
+  padding: 120px 0;
+}
+
+.claim-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.claim-heading .section-title span {
+  color: #0eb4b4;
+}
+.claim-heading .claim-help {
+  margin-bottom: 25px;
+  color: #082854;
+}
+.claim-heading .claim-help a {
+  color: #0eb4b4;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.claim-heading .claim-help a:hover {
+  color: #082854;
+}
+
+.claim-company {
+  text-align: center;
+  position: relative;
+  background: linear-gradient(131.83deg, rgba(178, 243, 243, 0.4) 0%, rgba(254, 236, 236, 0.3) 99.21%);
+  border: 2px solid;
+  border-image-source: linear-gradient(312.31deg, #B0F3F3 0%, #FEEBEB 100%);
+  border-radius: 10px;
+}
+.claim-company .logo {
+  padding: 30px 35px;
+}
+.claim-company .title {
+  font-size: 16px;
+  margin-bottom: 0;
+  background-color: #B2F3F3;
+  border-radius: 10px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.claim-form-header {
+  padding: 120px 0;
+}
+.claim-form-header .header-content .logo {
+  margin-bottom: 20px;
+}
+.claim-form-header .header-content .title {
+  background-color: #fff;
+  padding: 20px 30px;
+  box-shadow: 0px 40px 80px 0px #EBFCFCCC;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.claim-form-area {
+  padding: 120px 0;
+  background: linear-gradient(-138.72deg, rgba(255, 244, 245, 0.7) -34.17%, rgba(232, 250, 250, 0.7) 93.36%);
+}
+
+.claim-submit-form .form-info {
+  margin-bottom: 60px;
+}
+.claim-submit-form .form-info:last-child {
+  margin-bottom: 0;
+}
+.claim-submit-form .form-info .info-title {
+  margin-bottom: 20px;
+  color: #0eb4b4;
+}
+.claim-submit-form .form-info .info-title .sl-number {
+  color: #F6716F;
+  margin-right: 10px;
+}
+.claim-submit-form .form-info .inner {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+}
+.claim-submit-form .form-info .form-field .radio-btn-group {
+  margin-top: 7px;
 }
 
 /*# sourceMappingURL=style.css.map*/
