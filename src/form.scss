@@ -115,3 +115,27 @@
         }
     }
 }
+
+select {
+    background: url(../images/angle.png) 92% center no-repeat transparent;
+    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.submit-btn {
+    background-color: $primary_color;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    height: 55px;
+    line-height: 56px;
+    padding: 0 45px;
+    border-radius: 10px;
+    transition: .3s;
+    &:hover {
+        background-color: $secondary_color;
+    }
+}

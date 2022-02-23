@@ -192,6 +192,30 @@ a {
   opacity: 0;
 }
 
+select {
+  background: url(../images/angle.png) 92% center no-repeat transparent;
+  cursor: pointer;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.submit-btn {
+  background-color: #0eb4b4;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  height: 55px;
+  line-height: 56px;
+  padding: 0 45px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.submit-btn:hover {
+  background-color: #082854;
+}
+
 /*-------------------------
   Faq Page Styles
 -------------------------*/
@@ -282,7 +306,7 @@ a {
 -------------------------*/
 .contact-area {
   padding: 90px 0 120px;
-  background-image: url("../images/gradient-bg.png");
+  background-image: url("../images/gradient-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -399,6 +423,7 @@ a {
 }
 .contact-form-box .form-field {
   margin-bottom: 16px;
+  margin-top: 0;
 }
 .contact-form-box .form-field:last-child {
   margin-bottom: 0;
@@ -446,21 +471,6 @@ a {
   color: #082854;
   cursor: pointer;
   padding-left: 8px;
-}
-.contact-form-box .form-field .submit-btn {
-  background-color: #0eb4b4;
-  color: #fff;
-  font-weight: 500;
-  font-size: 16px;
-  border: none;
-  height: 55px;
-  line-height: 56px;
-  padding: 0 45px;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-.contact-form-box .form-field .submit-btn:hover {
-  background-color: #082854;
 }
 .contact-form-box .form-file-choose {
   position: relative;
@@ -767,6 +777,14 @@ a {
   height: 60px;
   line-height: 60px;
 }
+.claim-company.enrollment {
+  background: linear-gradient(131.83deg, rgba(254, 236, 236, 0.4) 0%, rgba(178, 243, 243, 0.4) 99.21%);
+  border: 2px solid;
+  border-image-source: linear-gradient(312.31deg, #FEEBEB 0%, #B0F3F3 100%);
+}
+.claim-company.enrollment .title {
+  background-color: #FDD3D3;
+}
 
 .claim-form-header {
   padding: 120px 0;
@@ -808,6 +826,16 @@ a {
 }
 .claim-submit-form .form-info .form-field .radio-btn-group {
   margin-top: 7px;
+}
+.claim-submit-form .form-info .form-field.radio-btn-inline {
+  display: flex;
+  align-items: center;
+}
+.claim-submit-form .form-info .form-field.radio-btn-inline > label {
+  margin-bottom: 0;
+  margin-right: 25px;
+  margin-top: 7px;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map*/

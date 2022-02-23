@@ -96,7 +96,7 @@
 -------------------------*/
 .contact-area {
     padding: 90px 0 120px;
-    background-image: url('../images/gradient-bg.png');   
+    background-image: url('../images/gradient-bg.svg');   
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -216,6 +216,7 @@
     }
     .form-field {
         margin-bottom: 16px;
+        margin-top: 0;
         &:last-child {
             margin-bottom: 0;
         }
@@ -261,21 +262,6 @@
                color: $secondary_color;
                cursor: pointer;
                padding-left: 8px;
-            }
-        }
-        .submit-btn {
-            background-color: $primary_color;
-            color: #fff;
-            font-weight: 500;
-            font-size: 16px;
-            border: none;
-            height: 55px;
-            line-height: 56px;
-            padding: 0 45px;
-            border-radius: 10px;
-            transition: .3s;
-            &:hover {
-                background-color: $secondary_color;
             }
         }
     }
@@ -597,7 +583,14 @@
         height: 60px;
         line-height: 60px;
     }
-
+    &.enrollment {
+        background: linear-gradient(131.83deg, rgba(254, 236, 236, .4) 0%, rgba(178, 243, 243, .4) 99.21%);
+        border: 2px solid;
+        border-image-source: linear-gradient(312.31deg, #FEEBEB 0%, #B0F3F3 100%);
+        .title {
+            background-color: #FDD3D3;
+        }
+    }
 }
 
 .claim-form-header {
@@ -643,6 +636,16 @@
         .form-field {
             .radio-btn-group {
                 margin-top: 7px;
+            }
+            &.radio-btn-inline {
+                display: flex;
+                align-items: center;
+                >label {
+                    margin-bottom: 0;
+                    margin-right: 25px;
+                    margin-top: 7px;
+                    font-size: 18px;
+                }
             }
         }
     }
