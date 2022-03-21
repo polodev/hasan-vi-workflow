@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="vendor/bootstrap5/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="vendor/fontawesome5/css/all.min.css"> -->
+    <link rel="stylesheet" href="vendor/fontawesome6/css/all.min.css">
+    <link rel="stylesheet" href="vendor/owl-carousel-2/assets/owl.carousel.min.css" type="text/css">
+	<link rel="stylesheet" href="vendor/owl-carousel-2/assets/owl.theme.default.min.css" type="text/css">
+    <link rel="stylesheet" href="vendor/ion-rangeslider/ion.rangeSlider.min.css" type="text/css">
+    <link rel="stylesheet" href="dist/style.css">
+    <title>Hello world from Hasan-work-flow</title>
+</head>
+
+<body>
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h6 class="breadcrumb-title">Health Insurance</h6>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Health Insurance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="health-listing-area">
+        <div class="container">
+            <div class="health-filter-area">
+                <div class="row g-5">
+                    <div class="col-lg-3">
+                        <div class="form-field">
+                            <label>Plan Type</label>
+                            <select name="plan-type" id="plan-type" class="form-control select">
+                                <option value="0">Show All</option>
+                                <option value="1">Medium Type</option>
+                                <option value="2">Large Type</option>
+                                <option value="3">Small Type</option>
+                                <option value="4">XXL Type</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-field">
+                            <label>Coverage Range</label>
+                            <input type="text" class="ion-rangeslider" name="my_range" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-field form-check-checkbox">
+                            <label for="has-insurance">Has Life Insurance?</label>
+                            <input class="form-check-input" type="checkbox" id="has-insurance">
+                            <label class="form-check-label" for="has-insurance"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="health-listing">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="images/health-01.png" alt="Health Insurance">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <div class="price-box">
+                                <span class="price">Tk 1,399</span>
+                                <a href="#">View Details</a>
+                            </div>
+                            <h5 class="title">
+                                <a href="#">
+                                    Hospital Cash - Bronze by Pragati Life <span>(BDT. 40,000 Life + BDT. 37,000 Health Coverage)</span>
+                                </a>
+                            </h5>
+                            <ul class="features-list">
+                                <li>Health and Life Insurance coverage up to BDT. 77,000</li>
+                                <li>Protection for hospitalization, disease, death and more</li>
+                            </ul>
+                            <div class="see-btn">
+                                <a href="#">See Packages</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="vendor/ion-rangeslider/ion.rangeSlider.min.js"></script>
+    <script src="vendor/main.js"></script>
+</body>
+
+</html>

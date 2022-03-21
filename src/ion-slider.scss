@@ -1,0 +1,67 @@
+/*------------------- 3.3 Ion Slider -------------------*/
+
+    .irs--flat {
+        margin-bottom: 0;
+    }
+    .irs--flat .irs-min, .irs--flat .irs-max {
+        display: none;
+    }
+
+    .irs--flat .irs-single {
+        display: none;
+    }
+
+    .irs--flat .irs-from, .irs--flat .irs-to {
+        visibility: visible !important;
+    }
+    .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+        font-size: 14px;
+        font-weight: 700;
+        color: $primary_color;
+        background-color: transparent;
+        left: 40px !important;
+        top: 0;
+    }
+    .irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before {
+        display: none;
+    }
+    .irs--flat .irs-to {
+        left: auto !important;
+        right: 0;
+
+    }
+    .irs--flat .irs-from {
+        left: 0 !important;
+       
+    }
+
+    .irs--flat .irs-line {
+        height: 2px;
+        background-color: rgba(8, 40, 84, .1);
+        border-radius: 30px;
+    }
+    .irs--flat .irs-bar {
+        height: 2px;
+        background-color: $primary_color;
+    }
+
+    .irs--flat .irs-handle {
+        cursor: pointer;
+    }
+
+    .irs--flat .irs-handle {
+        top: 19px;
+    }
+
+    .irs--flat .irs-handle>i:first-child {
+        height: 14px;
+        width: 14px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.35);
+        margin-left: -7px;
+        transition: .3s;
+        &:hover {
+            background-color: $primary_color;
+        }
+    }

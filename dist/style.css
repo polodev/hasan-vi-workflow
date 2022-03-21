@@ -277,6 +277,249 @@ select {
 }
 
 /*-------------------------
+  Health Listing Styles
+-------------------------*/
+.health-listing-area {
+  padding: 120px 0;
+  background-color: rgba(248, 249, 252, 0.7);
+}
+
+.health-filter-area {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 60px;
+}
+.health-filter-area .form-field {
+  margin-top: 0;
+}
+.health-filter-area .form-field label {
+  color: #697883;
+}
+.health-filter-area .form-field select {
+  color: #697883;
+}
+.health-filter-area .form-field.form-check-checkbox label {
+  display: block;
+}
+.health-filter-area .form-field.form-check-checkbox .form-check-input {
+  height: 48px;
+  width: 48px;
+  background-color: #f2f4f7;
+  border-radius: 10px;
+  border-color: transparent;
+  cursor: pointer;
+  filter: brightness(100%);
+  top: 0;
+}
+.health-filter-area .form-field.form-check-checkbox .form-check-input:checked {
+  background-color: #0eb4b4;
+  border-color: #0eb4b4;
+}
+.health-filter-area .form-field.form-check-checkbox .form-check-label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.health-listing {
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.health-listing .thumbnail a {
+  display: block;
+}
+.health-listing .thumbnail img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.health-listing .content {
+  padding: 40px 40px 45px;
+  position: relative;
+  border: 1px solid rgba(8, 40, 84, 0.1);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  transition: 0.3s;
+}
+.health-listing .content .price-box {
+  background: #F3FFFF;
+  box-shadow: 0px 10px 80px rgba(8, 40, 84, 0.1);
+  border-radius: 10px;
+  padding: 12px 20px 5px;
+  position: absolute;
+  top: -32px;
+  right: 40px;
+}
+.health-listing .content .price-box .price {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #082854;
+  line-height: 1;
+}
+.health-listing .content .price-box a {
+  font-size: 14px;
+  color: #082854;
+  transition: 0.3s;
+  line-height: 1;
+}
+.health-listing .content .price-box a:hover {
+  color: #0eb4b4;
+}
+.health-listing .content .title {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 38px;
+}
+.health-listing .content .title:after {
+  content: "";
+  height: 2px;
+  width: 100px;
+  background-color: #F6716F;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+}
+.health-listing .content .title a {
+  color: #082854;
+  transition: 0.3s;
+}
+.health-listing .content .title a:hover {
+  color: #0eb4b4;
+}
+.health-listing .content .title span {
+  font-size: 18px;
+}
+.health-listing .content .features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.health-listing .content .features-list li {
+  font-size: 16px;
+  position: relative;
+  padding-left: 28px;
+  margin: 10px 0;
+}
+.health-listing .content .features-list li:before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  font-size: 11px;
+  color: #ffffff;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  background-color: #0eb4b4;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  text-align: center;
+}
+.health-listing .content .see-btn {
+  margin-top: 35px;
+}
+.health-listing .content .see-btn a {
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #697883;
+  border-radius: 10px;
+  display: block;
+  color: #697883;
+  text-align: center;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+.health-listing:hover {
+  box-shadow: 0px 10px 80px rgba(8, 40, 84, 0.1);
+}
+.health-listing:hover .content {
+  border-color: #ffffff;
+}
+.health-listing:hover .content .see-btn a {
+  background-color: #F6716F;
+  border-color: #F6716F;
+  color: #ffffff;
+}
+.health-listing:hover .content .see-btn a:hover {
+  background-color: transparent;
+  color: #697883;
+  border-color: #697883;
+}
+
+/*------------------- 3.3 Ion Slider -------------------*/
+.irs--flat {
+  margin-bottom: 0;
+}
+
+.irs--flat .irs-min, .irs--flat .irs-max {
+  display: none;
+}
+
+.irs--flat .irs-single {
+  display: none;
+}
+
+.irs--flat .irs-from, .irs--flat .irs-to {
+  visibility: visible !important;
+}
+
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0eb4b4;
+  background-color: transparent;
+  left: 40px !important;
+  top: 0;
+}
+
+.irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before {
+  display: none;
+}
+
+.irs--flat .irs-to {
+  left: auto !important;
+  right: 0;
+}
+
+.irs--flat .irs-from {
+  left: 0 !important;
+}
+
+.irs--flat .irs-line {
+  height: 2px;
+  background-color: rgba(8, 40, 84, 0.1);
+  border-radius: 30px;
+}
+
+.irs--flat .irs-bar {
+  height: 2px;
+  background-color: #0eb4b4;
+}
+
+.irs--flat .irs-handle {
+  cursor: pointer;
+}
+
+.irs--flat .irs-handle {
+  top: 19px;
+}
+
+.irs--flat .irs-handle > i:first-child {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.35);
+  margin-left: -7px;
+  transition: 0.3s;
+}
+.irs--flat .irs-handle > i:first-child:hover {
+  background-color: #0eb4b4;
+}
+
+/*-------------------------
   Faq Page Styles
 -------------------------*/
 .faq-accordion-area {

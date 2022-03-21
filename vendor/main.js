@@ -1,6 +1,21 @@
 (function ($) {
     "use strict";
     
+    /*-------------------------------------
+    Price range filter
+    -------------------------------------*/
+    if ($.fn.ionRangeSlider !== undefined) {
+        $(".ion-rangeslider").ionRangeSlider({
+            type: "double",
+            min: 50000,
+            max: 100000,
+            drag_interval: false,
+            min_interval: null,
+            max_interval: null
+        });
+    }
+
+
     $(function () {
 
         /*-------------------------------------
