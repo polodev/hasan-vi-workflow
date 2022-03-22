@@ -1,0 +1,73 @@
+/*-------------------------
+  Travel Insurance Styles
+-------------------------*/
+.travel-intro-area {
+    padding: 100px 0;
+}
+
+.travel-intro-thumb {
+    img {
+        border-radius: 10px;
+    }
+}
+
+.travel-purpose-box {
+    background-color: #fff;
+    padding: 40px;
+    .title {
+       a {
+            font-size: 20px;
+            color: $primary_color;
+            transition: .3s;
+            &:hover {
+                color: $accent_color;
+                text-decoration: underline;
+            }
+        }
+    }
+    .travel-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            margin-bottom: 24px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 40px;
+                border-radius: 10px;
+                transition: .3s;
+                .thumb {
+                    margin-right: 16px;
+                }
+                .title {
+                    font-size: 28px;
+                    font-weight: 500;
+                    color: $secondary_color;
+                    transition: .3s;
+                }
+            }
+            &.bg-color-primary {
+                a {
+                    background-color: #D3F8F8;
+                   
+                    &:hover {
+                        background-color: #9df3f3;
+                    }
+                }
+            }
+            &.bg-color-secondary {
+                a {
+                    background-color: #FEEBEB;
+                    &:hover {
+                        background-color: #ffdddd;
+                    }
+                }
+            }
+        }
+    }
+}

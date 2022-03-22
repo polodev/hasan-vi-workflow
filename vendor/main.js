@@ -5,10 +5,20 @@
     Price range filter
     -------------------------------------*/
     if ($.fn.ionRangeSlider !== undefined) {
-        $(".ion-rangeslider").ionRangeSlider({
+        $(".coverage-range").ionRangeSlider({
             type: "double",
             min: 50000,
             max: 100000,
+            to: 80000,
+            drag_interval: false,
+            min_interval: null,
+            max_interval: null
+        });
+        $(".premium-range").ionRangeSlider({
+            type: "double",
+            min: 1000,
+            max: 18000,
+            to: 10000,
             drag_interval: false,
             min_interval: null,
             max_interval: null
