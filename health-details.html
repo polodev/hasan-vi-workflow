@@ -56,26 +56,24 @@
                                 <li class="step-number"><a href="#">1</a></li>
                                 <li class="step-number"><a href="#">2</a></li>
                             </ul>
-                            <div class="purchase-form">
-                                <h6 class="heading-title">1. Choose Insurance for</h6>
-                                <form>
-                                    <div class="form-field">
-                                        <div class="radio-btn-group">
-                                            <div class="form-check form-check-radio">
-                                                <input class="form-check-input" type="radio" name="choose" id="self">
-                                                <label class="form-check-label" for="self">Self</label>
-                                            </div>
-                                            <div class="form-check form-check-radio">
-                                                <input class="form-check-input" type="radio" name="choose" id="couple">
-                                                <label class="form-check-label" for="couple">Couple</label>
-                                            </div>
+                            <form class="purchase-form">
+                                <div class="form-field">
+                                    <h6 class="title">1. Choose Insurance for</h6>
+                                    <div class="radio-btn-group">
+                                        <div class="form-check form-check-radio">
+                                            <input class="form-check-input" type="radio" name="choose" id="self">
+                                            <label class="form-check-label" for="self">Self</label>
+                                        </div>
+                                        <div class="form-check form-check-radio">
+                                            <input class="form-check-input" type="radio" name="choose" id="couple">
+                                            <label class="form-check-label" for="couple">Couple</label>
                                         </div>
                                     </div>
-                                    <div class="form-field">
-                                        <button type="submit" class="submit-btn">Next</button>
-                                    </div>
-                                </form>
-                            </div>
+                                </div>
+                                <div class="form-field">
+                                    <button type="submit" class="submit-btn">Next</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -113,6 +111,48 @@
                         <div class="policy-text">* Standard terms and conditions apply. Please review the <a href="https://bimafy.com/pdf/Pragati-Life-Hospital-Cash-Plans-Policy-Wording.pdf">Policy Wording</a> for more detailed information.</div>
                     </div>
                 </div>
+            </div>
+            <!-- Car Insurance Purchase Form -->
+            <div class="purchase-box motor-purchase-box mt-5">
+                <ul class="step-bar">
+                    <li class="step-number"><a href="#">1</a></li>
+                    <li class="step-number"><a href="#">2</a></li>
+                    <li class="step-number"><a href="#">3</a></li>
+                    <li class="step-number"><a href="#">4</a></li>
+                    <li class="step-number"><a href="#">5</a></li>
+                </ul>
+                <form class="purchase-form">
+                    <div class="form-field">
+                        <h6 class="title">What is the CC limit of your Private Car ?</h6>
+                        <div class="radio-btn-group">
+                            <div class="form-check form-check-radio">
+                                <input class="form-check-input" type="radio" name="cc-limit" id="cc-check1">
+                                <label class="form-check-label" for="cc-check1">800 cc - 1300 cc</label>
+                            </div>
+                            <div class="form-check form-check-radio">
+                                <input class="form-check-input" type="radio" name="cc-limit" id="cc-check2">
+                                <label class="form-check-label" for="cc-check2">1301 cc - 1800 cc</label>
+                            </div>
+                            <div class="form-check form-check-radio">
+                                <input class="form-check-input" type="radio" name="cc-limit" id="cc-check3">
+                                <label class="form-check-label" for="cc-check3">1801cc - 3000 cc</label>
+                            </div>
+                            <div class="form-check form-check-radio">
+                                <input class="form-check-input" type="radio" name="cc-limit" id="cc-check4">
+                                <label class="form-check-label" for="cc-check4">Over 3000 cc</label>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="form-field">
+                        <h6 class="title">Seating Capacity</h6>
+                        <div class="seat-select">1 Driver +  <div class="pro-qty"><input type="text" value="1"></div> Passengers = Total <span>5</span> seats</div>
+                        <span class="condition-text">* As per vehicle registration certificate</span>
+                    </div>
+                    <div class="form-field">
+                        <button type="submit" class="submit-btn">Next</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

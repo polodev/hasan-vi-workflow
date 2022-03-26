@@ -519,6 +519,22 @@ select {
   font-weight: 500;
   color: #0eb4b4;
 }
+.health-info-box .buy-btn {
+  display: inline-block;
+  background-color: #0eb4b4;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  border: none;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 22px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.health-info-box .buy-btn:hover {
+  background-color: #082854;
+}
 
 .purchase-box {
   background-color: #ffffff;
@@ -530,7 +546,7 @@ select {
   align-items: center;
   list-style: none;
   padding: 0;
-  margin: 0 0 24px 0;
+  margin: 0;
   position: relative;
   z-index: 1;
 }
@@ -597,8 +613,9 @@ select {
   background-color: #0eb4b4;
   color: #ffffff;
 }
-.purchase-box .purchase-form .heading-title {
+.purchase-box .purchase-form .title {
   color: #082854;
+  margin-bottom: 18px;
 }
 .purchase-box .purchase-form .submit-btn {
   font-size: 14px;
@@ -606,7 +623,6 @@ select {
   line-height: 45px;
   padding: 0 20px;
 }
-
 table {
   background-color: #ffffff;
   border-radius: 10px;
@@ -639,6 +655,14 @@ table tbody td {
 }
 table tbody td:last-child {
   border-right: none;
+}
+table th, table td {
+  min-width: 240px;
+}
+
+hr {
+  border: 1px solid #E9E6E6;
+  margin: 32px 0;
 }
 
 /*------------------- 3.3 Ion Slider -------------------*/
@@ -793,6 +817,72 @@ table tbody td:last-child {
 }
 .travel-purpose-box .travel-list li.bg-color-secondary a:hover {
   background-color: #ffdddd;
+}
+
+/*-------------------------
+  Accident Details Styles
+-------------------------*/
+.accident-details-area {
+  padding: 120px 0;
+}
+.accident-details-area .health-summery-table p {
+  margin-bottom: 24px;
+}
+.accident-details-area .health-summery-table .table {
+  margin-bottom: 40px !important;
+}
+
+.accident-top-banner {
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.product-details-accordion .accordion-item {
+  border: none;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+.product-details-accordion .accordion-item .accordion-header .accordion-button {
+  background-color: #B2F3F3;
+  border: none;
+  box-shadow: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #082854;
+  padding: 25px 40px 20px;
+  border-radius: 10px 10px 0px 0px;
+}
+.product-details-accordion .accordion-item .accordion-header .accordion-button:after {
+  display: none;
+}
+.product-details-accordion .accordion-item .accordion-header .accordion-button.collapsed {
+  border-radius: 10px;
+}
+.product-details-accordion .accordion-item .accordion-body {
+  padding: 16px 40px;
+}
+.product-details-accordion .accordion-item .accordion-body .table {
+  margin-bottom: 0 !important;
+}
+.product-details-accordion .accordion-item .accordion-body .table thead th {
+  background-color: transparent !important;
+  border-bottom: 1px solid #082854;
+}
+.product-details-accordion .accordion-item .accordion-body .table th, .product-details-accordion .accordion-item .accordion-body .table td {
+  padding: 16px 40px !important;
+  border-right: none;
+}
+.product-details-accordion .accordion-item .accordion-body p:last-child {
+  margin-bottom: 0;
+}
+.product-details-accordion .benefit-details .accordion-body {
+  padding: 0;
+}
+.product-details-accordion .benefit-details .accordion-body p {
+  font-weight: 500;
+  padding: 16px 40px;
 }
 
 /*-------------------------
