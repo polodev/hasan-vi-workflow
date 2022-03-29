@@ -6,6 +6,7 @@
 @import "ion-slider.scss";
 @import "travel-intro.scss";
 @import "accident-details.scss";
+@import "profile.scss";
 
 /*-------------------------
   Faq Page Styles
@@ -347,8 +348,6 @@
     }
 }
 
-
-
 /*-------------------------
   Terms Of Service Styles
 -------------------------*/
@@ -656,94 +655,6 @@
         margin-top: -30px;
         .form-field {
             margin-top: 18px;
-        }
-    }
-}
-
-/*-------------------------
-  User Profile Styles
--------------------------*/
-.user-welcome-notice {
-    margin-top: 60px;
-    padding: 60px 0;
-    background-color: rgba(232, 250, 250, 1);
-    background: linear-gradient(90deg, rgba(14,180,180,0.06) 0%, rgba(246,113,111,0.06) 100%);
-    .welcom-text {
-        .title {
-            margin-bottom: 0;
-        }
-    }
-}
-
-.user-info-area {
-    background: linear-gradient(-138.72deg, rgba(232, 250, 250, 0.7) -34.17%, rgba(255, 244, 245, 0.7) 126.35%);
-    padding: 120px 0;
-}
-
-.user-profile-info {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    .heading-item {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 40px;
-        .user-meta {
-            display: flex;
-            align-items: center;
-            background-color: #F8FAFC;
-            border-radius: 10px;
-            .user-avatar {
-                img {
-                    border-radius: 10px;
-                }
-            }
-            .user-name {
-                padding: 24px;
-                margin-bottom: 0;
-                flex: 1;
-            }
-        }
-        .action-btn {
-            display: flex;
-            button {
-                margin-right: 12px;
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
-            .edit-btn {
-                background-color: transparent;
-                border: 1px solid #EDF2F7;
-                border-radius: 6px;
-                font-size: 12px;
-                color: #16192C;
-                height: 45px;
-                line-height: 45px;
-                padding: 0 20px;
-                font-weight: 500;
-                transition: .3s;
-                i {
-                    margin-right: 8px;
-                }
-                &:hover {
-                    background-color: $primary_color;
-                    border-color: $primary_color;
-                    color: $paragraph_white;
-                }
-            }
-            .submit-btn {
-                font-size: 12px;
-                letter-spacing: 0.0125em;
-                height: 45px;
-                line-height: 45px;
-                padding: 0 20px;
-            }
-        }
-    }
-    .user-full-info {
-        .info-title {
-            margin-bottom: 24px;
         }
     }
 }
