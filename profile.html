@@ -50,103 +50,115 @@
     <!-- Profile Info Start End -->
     <div class="user-profile-area">
         <div class="container">
-            <div class="user-profile-tab">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#product" type="button" role="tab" aria-selected="true">Product</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#orders" type="button" role="tab" aria-selected="false">Orders</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#client-api" type="button" role="tab" aria-selected="false">Client Api</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#claim" type="button" role="tab" aria-selected="false">Claim</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#affiliates" type="button" role="tab" aria-selected="false">Affiliates</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <a href="#" class="nav-link">Logout</a>
-                  </li>
-                </ul>
-                
-                <!-- Tab panes -->
-                <div class="tab-content">
-                  <div class="tab-pane active" id="product" role="tabpanel">
-                    <div class="user-profile-info">
-                        <div class="heading-item">
-                            <div class="user-meta">
-                                <div class="user-avatar">
-                                    <img src="images/avatar.png" alt="Hefiy Robert">
-                                </div>
-                                <h6 class="user-name">Hefiy Robert</h6>
+           
+            <!-- Nav -->
+            <ul class="user-profile-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" title="Profile">
+                        <span class="icon"><i class="fa-solid fa-user-large"></i></span>
+                        <span class="text">Profile</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" title="Orders">
+                        <span class="icon"><i class="fa-solid fa-basket-shopping"></i></span>
+                        <span class="text">Orders</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" title="Client Api">
+                        <span class="icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></span>
+                        <span class="text">Client Api</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" title="Claim">
+                        <span class="icon"><i class="fa-solid fa-money-check-dollar"></i></span>
+                        <span class="text">Claim</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" title="Affiliates">
+                        <span class="icon"><i class="fa-solid fa-users"></i></span>
+                        <span class="text">Affiliates</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                <a href="#" class="nav-link" title="Logout">
+                    <span class="icon"><i class="fa-solid fa-power-off"></i></span>
+                    <span class="text">Logout</span>
+                </a>
+                </li>
+            </ul>
+            
+            <!-- Profile Content -->
+            <div class="user-profile-box">
+                <div class="user-profile">
+                    <div class="heading-item">
+                        <div class="user-meta">
+                            <div class="user-avatar">
+                                <img src="images/avatar.png" alt="Hefiy Robert">
                             </div>
-                            <div class="action-btn">
-                                <button class="edit-btn"><i class="fas fa-edit"></i> Edit</button>
-                                <button type="submit" class="submit-btn">SAVE CHANGES</button>
-                            </div>
+                            <h6 class="user-name">Hefiy Robert</h6>
                         </div>
-                        <div class="user-full-info">
-                            <h6 class="info-title">Account Informations</h6>
-                            <div class="row g-5">
-                                <div class="col-lg-4 form-field">
-                                    <label>First Name</label>
-                                    <input type="text" class="form-control" id="fname" placeholder="Hefliy">
-                                </div>
-                                <div class="col-lg-4 form-field">
-                                    <label>Last Name</label>
-                                    <input type="text" class="form-control" id="lname" placeholder="Robert">
-                                </div>
-                                <div class="col-lg-4 form-field">
-                                    <label>Registered Mobile Number</label>
-                                    <input type="text" class="form-control" id="number" placeholder="Enter mobile number">
-                                </div>
-                                <div class="col-lg-4 form-field">
-                                    <label>Email Address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter email">
-                                </div>
-                                <div class="col-lg-4 form-field">
-                                    <label>NID/Passport Number</label>
-                                    <input type="text" class="form-control" id="nid" placeholder="Enter number">
-                                </div>
-                                <div class="col-lg-4 form-field">
-                                    <label>Date of Birth</label>
-                                    <input type="date" class="form-control" id="dob" placeholder="DOB">
-                                </div>
-                                <div class="col-lg-4 form-field">
-                                    <label>Address</label>
-                                    <input type="text" class="form-control" id="address" placeholder="Address">
-                                </div>
-                                <div class="col-lg-4 form-field">
-                                    <label>City</label>
-                                    <input type="text" class="form-control" id="city" placeholder="Enter city">
-                                </div>
-                                <div class="col-lg-4 form-field">
-                                    <label>Gender</label>
-                                    <div class="radio-btn-group">
-                                        <div class="form-check form-check-radio">
-                                            <input class="form-check-input" type="radio" name="department" id="support">
-                                            <label class="form-check-label" for="support">Male</label>
-                                        </div>
-                                        <div class="form-check form-check-radio">
-                                            <input class="form-check-input" type="radio" name="department" id="sales">
-                                            <label class="form-check-label" for="sales">Female</label>
-                                        </div>
+                        <div class="action-btn">
+                            <button class="edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                            <button type="submit" class="submit-btn">SAVE CHANGES</button>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h6 class="info-title">Account Informations</h6>
+                        <div class="row g-5">
+                            <div class="col-lg-4 form-field">
+                                <label>First Name</label>
+                                <input type="text" class="form-control" id="fname" placeholder="Hefliy">
+                            </div>
+                            <div class="col-lg-4 form-field">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" id="lname" placeholder="Robert">
+                            </div>
+                            <div class="col-lg-4 form-field">
+                                <label>Registered Mobile Number</label>
+                                <input type="text" class="form-control" id="number" placeholder="Enter mobile number">
+                            </div>
+                            <div class="col-lg-4 form-field">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                            </div>
+                            <div class="col-lg-4 form-field">
+                                <label>NID/Passport Number</label>
+                                <input type="text" class="form-control" id="nid" placeholder="Enter number">
+                            </div>
+                            <div class="col-lg-4 form-field">
+                                <label>Date of Birth</label>
+                                <input type="date" class="form-control" id="dob" placeholder="DOB">
+                            </div>
+                            <div class="col-lg-4 form-field">
+                                <label>Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="Address">
+                            </div>
+                            <div class="col-lg-4 form-field">
+                                <label>City</label>
+                                <input type="text" class="form-control" id="city" placeholder="Enter city">
+                            </div>
+                            <div class="col-lg-4 form-field">
+                                <label>Gender</label>
+                                <div class="radio-btn-group">
+                                    <div class="form-check form-check-radio">
+                                        <input class="form-check-input" type="radio" name="department" id="support">
+                                        <label class="form-check-label" for="support">Male</label>
+                                    </div>
+                                    <div class="form-check form-check-radio">
+                                        <input class="form-check-input" type="radio" name="department" id="sales">
+                                        <label class="form-check-label" for="sales">Female</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                  </div>
-                  <div class="tab-pane" id="orders" role="tabpanel"> Orders </div>
-                  <div class="tab-pane" id="client-api" role="tabpanel"> Messages </div>
-                  <div class="tab-pane" id="claim" role="tabpanel"> Claim </div>
-                  <div class="tab-pane" id="affiliates" role="tabpanel"> Affiliates </div>
                 </div>
             </div>
+            <!-- Profile Content -->
         </div>
     </div>
     <!-- Profile Info Start End -->
