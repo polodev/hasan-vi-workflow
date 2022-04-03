@@ -904,7 +904,7 @@ hr {
   background-color: #e8fafa;
   background: linear-gradient(90deg, rgba(14, 180, 180, 0.06) 0%, rgba(246, 113, 111, 0.06) 100%);
 }
-.user-welcome-notice .welcom-text .title {
+.user-welcome-notice .welcome-text .title {
   margin-bottom: 0;
 }
 
