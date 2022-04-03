@@ -1,7 +1,7 @@
 # Working log in hour
 
 ## April
-2022-04-03 - 12:30PM - 
+2022-04-03 - 12:30PM - 2:45PM -> 2h
 
 
 ## March

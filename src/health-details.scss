@@ -180,12 +180,26 @@
 			padding: 0 20px;
 		}
 	}
+	hr {
+		border: 1px solid #E9E6E6;
+		margin: 32px 0;
+	}
 	&.motor-purchase-box {
-		
+		.seat-select {
+			display: flex;
+			align-items: center;
+			font-size: 15px;
+			margin-bottom: 16px;
+			.seat-num {
+				font-weight: 500;
+				padding: 0 5px;
+			}
+		}
+		.condition-text {
+			font-size: 15px;
+		}
 	}
 }
-
-
 
 table {
 	background-color: #ffffff;
@@ -233,7 +247,48 @@ table {
 }
 
 
-hr {
-	border: 1px solid #E9E6E6;
-	margin: 32px 0;
+.prod-qnty {
+    width: 48px;
+    height: 48px;
+	line-height: 48px;
+    border-radius: 10px;
+	background-color: #F8FAFC;
+	margin: 0 8px;
+	padding: 0 12px;
+	position: relative;
+    input {
+        width: 100%;
+        border: none;
+        padding: 0;
+        text-align: center;
+        background-color: transparent;
+        font-size: 15px;
+        color: #697883;
+		text-align: left;
+		&:focus {
+			border: none;
+			box-shadow: none;
+			outline: none;
+		}
+    }
+    .qnty-btn {
+		position: absolute;
+		right: 10px;
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        font-size: 12px;
+        color: $secondary_color;
+        transition: 0.3s;
+		&.decrement {
+			bottom: 14px;
+		}
+		&.increment {
+			top: 14px;
+		}
+        &:hover {
+            color: $primary_color;
+        }
+    }
+    
 }
