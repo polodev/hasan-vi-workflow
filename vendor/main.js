@@ -29,12 +29,12 @@
         Quantity Button
     -------------------------------------*/
     function quantityButton() {
-        $('.pro-qty').prepend('<span class="dec qtybtn fa-solid fa-angle-up"></span>');
-        $('.pro-qty').append('<span class="inc qtybtn fa-solid fa-angle-down"></span>');
-        $('.qtybtn').on('click', function () {
+        $('.prod-qnty').prepend('<span class="increment qnty-btn fa-solid fa-angle-up"></span>');
+        $('.prod-qnty').append('<span class="decrement qnty-btn fa-solid fa-angle-down"></span>');
+        $('.qnty-btn').on('click', function () {
             var $button = $(this);
             var oldValue = $button.parent().find('input').val();
-            if ($button.hasClass('inc')) {
+            if ($button.hasClass('increment')) {
                 var newVal = parseFloat(oldValue) + 1;
             } else {
                 // Don't allow decrementing below zero
