@@ -26,6 +26,17 @@
     }
 
     /*-------------------------------------
+    Price range Select
+    -------------------------------------*/
+
+    $('.price-range-list .price-range, .gender-list .gender-select').on('click', function () {
+        var $this = $(this);
+        $this.addClass('active').removeClass;
+        $this.siblings().removeClass('active');
+    })
+
+
+    /*-------------------------------------
         Quantity Button
     -------------------------------------*/
     function quantityButton() {

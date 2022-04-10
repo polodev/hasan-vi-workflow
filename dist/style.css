@@ -1131,6 +1131,139 @@ table th, table td {
 }
 
 /*-------------------------
+  Health Search Styles
+-------------------------*/
+.health-search-box .nav-tabs {
+  border: none;
+  margin: -10px;
+  flex: 1;
+  justify-content: center;
+}
+.health-search-box .nav-tabs .nav-item {
+  margin: 10px;
+}
+.health-search-box .nav-tabs .nav-link {
+  border: 1px solid #b6c5d1;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #082854;
+  padding: 10px 10px 5px;
+  width: 100px;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.8;
+  transition: 0.3s;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+.health-search-box .nav-tabs .nav-link:after {
+  content: "\f175";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  font-size: 22px;
+  color: #0eb4b4;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+.health-search-box .nav-tabs .nav-link img {
+  display: block;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: 0.3s;
+  width: 40px;
+  margin: 0 auto 10px;
+}
+.health-search-box .nav-tabs .nav-link.active:after {
+  visibility: visible;
+  opacity: 1;
+  bottom: -31px;
+}
+.health-search-box .nav-tabs .nav-link.active, .health-search-box .nav-tabs .nav-link:hover {
+  opacity: 1;
+  border-color: #0eb4b4;
+  box-shadow: 0 2px 15px 4px rgba(14, 180, 180, 0.08);
+}
+.health-search-box .nav-tabs .nav-link.active img, .health-search-box .nav-tabs .nav-link:hover img {
+  filter: grayscale(0);
+  opacity: 1;
+}
+.health-search-box .tab-content {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  border: 1px solid #0eb4b4;
+}
+
+.health-search-form .form-field .limit-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+.health-search-form .form-field .submit-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+.health-search-form .form-field .submit-btn i {
+  font-size: 13px;
+  margin-left: 5px;
+}
+.health-search-form .price-range-list {
+  display: flex;
+  align-items: center;
+  margin: -5px;
+}
+.health-search-form .price-range-list .price-range {
+  flex: 1;
+  margin: 5px;
+  border: 2px solid #F8FAFC;
+}
+.health-search-form .price-range-list .price-range:hover {
+  color: #0eb4b4;
+}
+.health-search-form .price-range-list .price-range.active {
+  box-shadow: 0 2px 15px 4px rgba(14, 180, 180, 0.1);
+  border-color: #0eb4b4;
+  color: #0eb4b4;
+}
+.health-search-form .gender-list {
+  display: flex;
+  align-items: center;
+  margin: -10px;
+}
+.health-search-form .gender-list .gender-select {
+  height: auto;
+  margin: 10px;
+  border: 2px solid #F8FAFC;
+  padding: 15px 10px 10px;
+}
+.health-search-form .gender-list .gender-select img {
+  width: 30px;
+  display: block;
+  margin: 0 auto 10px;
+}
+.health-search-form .gender-list .gender-select:hover {
+  color: #0eb4b4;
+}
+.health-search-form .gender-list .gender-select.active {
+  box-shadow: 0 2px 15px 4px rgba(14, 180, 180, 0.1);
+  border-color: #0eb4b4;
+  color: #0eb4b4;
+}
+
+/*-------------------------
+  Spacing
+-------------------------*/
+.section-gap {
+  padding: 120px 0;
+}
+
+/*-------------------------
   Faq Page Styles
 -------------------------*/
 .faq-accordion-area {

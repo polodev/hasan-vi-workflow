@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="vendor/bootstrap5/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="vendor/fontawesome5/css/all.min.css"> -->
+    <link rel="stylesheet" href="vendor/fontawesome6/css/all.min.css">
+    <link rel="stylesheet" href="vendor/owl-carousel-2/assets/owl.carousel.min.css" type="text/css">
+	<link rel="stylesheet" href="vendor/owl-carousel-2/assets/owl.theme.default.min.css" type="text/css">
+    <link rel="stylesheet" href="vendor/ion-rangeslider/ion.rangeSlider.min.css" type="text/css">
+    <link rel="stylesheet" href="dist/style.css">
+    <title>Health Insurance Search</title>
+</head>
+
+<body>
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h6 class="breadcrumb-title">Health Insurance</h6>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Health Insurance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="health-search-box">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" id="health-tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#self-plan" type="button" role="tab" aria-selected="true"><img src="images/man.png" alt="Self Insurance"> Self</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link"  data-bs-toggle="tab" data-bs-target="#couple-plan" type="button" role="tab" aria-selected="false"><img src="images/couple.png" alt="Self Insurance">Couple</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#family-plan" type="button" role="tab" aria-selected="false"><img src="images/family.png" alt="Self Insurance">Family</button>
+                          </li>
+                        </ul>
+                        
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="self-plan" role="tabpanel">
+                                <form action="#" class="health-search-form">
+                                    <div class="row g-4">
+                                        <div class="form-field col-12">
+                                            <label>Your Age (In Years)</label>
+                                            <select name="plan-type" id="plan-type" class="form-control select">
+                                                <option value="0">Select Age</option>
+                                                <option value="1">18</option>
+                                                <option value="2">19</option>
+                                                <option value="3">20</option>
+                                                <option value="4">21</option>
+                                                <option value="5">22</option>
+                                                <option value="6">23</option>
+                                                <option value="7">24</option>
+                                                <option value="8">25</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-field col-12">
+                                            <label>Gender</label>
+                                            <div class="gender-list">
+                                                <button type="button" value="Male" class="gender-select form-control"><img src="images/male.png" alt="Male"> Male</button>
+                                                <button type="button" value="Female" class="gender-select form-control"><img src="images/female.png" alt="Female">Female</button>
+                                                <button type="button" value="Others" class="gender-select form-control"><img src="images/transgender.png" alt="Female">Others</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-field col-12">
+                                            <label class="limit-text">Select Hospitalization Limit (BDT)</label>
+                                            <div class="price-range-list">
+                                                <button type="button" value=".5-2" class="price-range form-control">50k - 2L</button>
+                                                <button type="button" value="2-4" class="price-range form-control">2L - 4L</button>
+                                                <button type="button" value="4-10" class="price-range form-control">4L - 10L</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-field col-12">
+                                            <button type="submit" class="submit-btn">See Plan <i class="fa-solid fa-arrow-right-long"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                          <div class="tab-pane" id="couple-plan" role="tabpanel">
+                            <form action="#" class="health-search-form">
+                                <div class="row g-4">
+                                    <div class="form-field col-lg-6">
+                                        <label>Your Age (In Years)</label>
+                                        <select name="plan-type" id="plan-type" class="form-control select">
+                                            <option value="0">Select Age</option>
+                                            <option value="1">18</option>
+                                            <option value="2">19</option>
+                                            <option value="3">20</option>
+                                            <option value="4">21</option>
+                                            <option value="5">22</option>
+                                            <option value="6">23</option>
+                                            <option value="7">24</option>
+                                            <option value="8">25</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-field col-lg-6">
+                                        <label>Spouse Age (In Years)</label>
+                                        <select name="plan-type" id="plan-type" class="form-control select">
+                                            <option value="0">Select Age</option>
+                                            <option value="1">18</option>
+                                            <option value="2">19</option>
+                                            <option value="3">20</option>
+                                            <option value="4">21</option>
+                                            <option value="5">22</option>
+                                            <option value="6">23</option>
+                                            <option value="7">24</option>
+                                            <option value="8">25</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-field col-12">
+                                        <label class="limit-text">Select Hospitalization Limit (BDT)</label>
+                                        <div class="price-range-list">
+                                            <button type="button" value=".5-2" class="price-range form-control">50k - 2L</button>
+                                            <button type="button" value="2-4" class="price-range form-control">2L - 4L</button>
+                                            <button type="button" value="4-10" class="price-range form-control">4L - 10L</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-field col-12">
+                                        <button type="submit" class="submit-btn">See Plan <i class="fa-solid fa-arrow-right-long"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                          </div>
+                          <div class="tab-pane" id="family-plan" role="tabpanel">
+                            <form action="#" class="health-search-form">
+                                <div class="row g-4">
+                                    <div class="form-field col-lg-12">
+                                        <label>Their Age (In Years)</label>
+                                        <select name="plan-type" id="plan-type" class="form-control select">
+                                            <option value="0">Select Age</option>
+                                            <option value="1">18</option>
+                                            <option value="2">19</option>
+                                            <option value="3">20</option>
+                                            <option value="4">21</option>
+                                            <option value="5">22</option>
+                                            <option value="6">23</option>
+                                            <option value="7">24</option>
+                                            <option value="8">25</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-field col-12">
+                                        <label class="limit-text">Select Hospitalization Limit (BDT)</label>
+                                        <div class="price-range-list">
+                                            <button type="button" value=".5-2" class="price-range form-control">50k - 2L</button>
+                                            <button type="button" value="2-4" class="price-range form-control">2L - 4L</button>
+                                            <button type="button" value="4-10" class="price-range form-control">4L - 10L</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-field col-12">
+                                        <button type="submit" class="submit-btn">See Plan <i class="fa-solid fa-arrow-right-long"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+    </div>
+
+
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="vendor/ion-rangeslider/ion.rangeSlider.min.js"></script>
+    <script src="vendor/main.js"></script>
+</body>
+
+</html>
