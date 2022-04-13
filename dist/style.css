@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap);
 /*-------------------------
   Typography
 -------------------------*/
@@ -75,6 +75,11 @@ p {
 
 a {
   text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
 }
 
 /*-------------------------
@@ -1254,6 +1259,183 @@ table th, table td {
   box-shadow: 0 2px 15px 4px rgba(14, 180, 180, 0.1);
   border-color: #0eb4b4;
   color: #0eb4b4;
+}
+
+.health-plan-grid {
+  background-color: #fff;
+  box-shadow: 0 2px 15px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 0 10px 10px;
+  padding: 15px;
+}
+.health-plan-grid .inner {
+  display: flex;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+}
+.health-plan-grid .company-logo {
+  position: relative;
+  max-width: 150px;
+  border-right: 1px solid #e5e5e5;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.health-plan-grid .company-logo .plan-name {
+  margin-bottom: 0;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.health-plan-grid .plan-content {
+  flex: 1;
+  padding: 15px;
+}
+.health-plan-grid .plan-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.health-plan-grid .plan-content ul li {
+  flex: 1;
+}
+.health-plan-grid .plan-content ul li .label {
+  font-size: 14px;
+}
+.health-plan-grid .plan-content ul li .value {
+  font-size: 17px;
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+.health-plan-grid .plan-action {
+  max-width: 260px;
+  border-left: 1px solid #e5e5e5;
+  padding: 15px;
+}
+.health-plan-grid .plan-action .plan-premium {
+  text-align: center;
+}
+.health-plan-grid .plan-action .price {
+  margin-bottom: 0;
+}
+.health-plan-grid .plan-action .duration {
+  font-size: 15px;
+  font-weight: 300;
+}
+.health-plan-grid .plan-action .group-btn {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.health-plan-grid .plan-action .group-btn a {
+  background-color: #0eb4b4;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.health-plan-grid .plan-action .group-btn a:hover {
+  background-color: #082854;
+}
+.health-plan-grid .plan-action .group-btn .details-btn {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.health-plan-grid .compare-btn-wrap {
+  position: absolute;
+  top: -59px;
+  left: -16px;
+}
+.health-plan-grid .compare-btn-wrap .compare-btn {
+  width: 170px;
+  text-align: center;
+  font-size: 14px;
+  color: #082854;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -12px 20px 0px rgba(0, 0, 0, 0.07);
+  transition: 0.3s;
+}
+.health-plan-grid .compare-btn-wrap .compare-btn i {
+  padding-right: 10px;
+}
+.health-plan-grid .compare-btn-wrap .compare-btn:hover {
+  color: #0eb4b4;
+}
+
+.compare-box-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  background-color: #F8FAFC;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.07);
+  z-index: 5;
+}
+.compare-box-wrap .compare-box {
+  padding: 15px 100px;
+  position: relative;
+}
+.compare-box-wrap .compare-box .inner {
+  position: relative;
+}
+
+.compare-placeholder {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.compare-placeholder .placeholder-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 300;
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.compare-plan-box .plan-header {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+}
+.compare-plan-box .plan-header .thumbnail {
+  max-width: 100px;
+  border-right: 1px solid #e5e5e5;
+  padding-right: 15px;
+  margin-right: 15px;
+}
+.compare-plan-box .plan-header .content {
+  flex: 1;
+}
+.compare-plan-box .plan-header .content .plan-name {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+.compare-plan-box .plan-header .content .price {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.compare-plan-box .plan-header .content .duration {
+  font-size: 15px;
+  font-weight: 300;
 }
 
 /*-------------------------

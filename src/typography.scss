@@ -2,7 +2,7 @@
   Typography
 -------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap');
 html {
     font-size: 10px;
 }
@@ -70,4 +70,9 @@ p {
 
 a {
     text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
 }
