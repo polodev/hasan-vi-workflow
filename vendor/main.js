@@ -61,6 +61,37 @@
 
     quantityButton();
 
+   /*-------------------------------------
+        Compare Modal
+    -------------------------------------*/
+
+    $('.compare-btn').on('click', function (e) {
+        
+        var $this = $(this),
+            modalWrap = $('.compare-box-wrap');
+            
+        $this.toggleClass('added');
+
+        if ($this.hasClass('added')) {
+            modalWrap.addClass('compare-added');
+        }else {
+            modalWrap.removeClass('compare-added');
+        }
+
+        e.preventDefault();
+    })
+
+    $('.compare-all').on('click', function (e) {
+        
+        var modalWrap = $('.compare-box-wrap');
+            
+        modalWrap.addClass('compare-opend');
+        
+        e.preventDefault();
+    })
+
+
+
     $(function () {
 
         /*-------------------------------------
