@@ -135,8 +135,6 @@
     }
 }
 
-
-
 .health-plan-grid {
     background-color: #fff;
     box-shadow: 0 2px 15px 2px rgba(0, 0, 0, .08);
@@ -335,7 +333,7 @@
 
 .compare-box-wrap {
     position: fixed;
-    top: -150px;
+    bottom: -120px;
     left: 0;
     right: 0;
     width: 100%;
@@ -343,22 +341,37 @@
     background-color: $primary_color;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .07);
     z-index: 5;
+    overflow-y: auto;
     visibility: hidden;
     opacity: 0;
     transition: .4s;
     .compare-box {
-        padding: 15px 50px 15px 200px;
+        padding: 15px 50px;
+        @media only screen and (max-width: 991px) {
+            padding: 15px 20px;
+        }
+        @media only screen and (max-width: 767px) {
+            padding: 15px 20px 85px;
+        }
         position: relative;
         .inner {
             position: relative;
         }
         .compare-action {
             position: absolute;
-            top: 50%;
-            left: 25px;
-            transform: translateY(-50%);
+            top: 20px;
+            left: 50px;
+            @media only screen and (max-width: 767px) {
+               top: auto;
+               bottom: 10px;
+               left: 50%;
+               transform: translateX(-50%);
+            }
             .action-btn-group {
                 display: inline-block;
+                @media only screen and (max-width: 767px) {
+                    display: flex;
+                }
             }
             a {
                 display: block;
@@ -369,7 +382,7 @@
                 padding: 8px 12px;
                 border-radius: 4px;
                 transition: 0.3s;
-                margin: 10px 0;
+                margin: 10px 5px;
                 &:hover {
                     background-color: #ffffff;
                     color: $secondary_color;
@@ -378,60 +391,41 @@
         }
     }
     &.compare-added {
-        top: 0;
+        bottom: 0;
         visibility: visible;
         opacity: 1;
     }
     &.compare-opend {
+        height: 100%;
+        .compare-action {
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: auto;
+            top: 15px;
+            .action-btn-group {
+                display: flex;
+            }
+        }
         .compare-box {
-            padding: 100px 50px 50px;
-            .compare-action {
-                top: 30px;
-                left: 50%;
-                transform: translateY(0) translateX(-50%);
-                .action-btn-group {
-                    display: flex;  
-                    align-items: center;
-                    a {
-                        margin: 0 5px;
-                    }
+            padding: 70px 50px;
+            @media only screen and (max-width: 991px) {
+                padding: 70px 20px;
+            }
+        }
+        .compare-plan-box-wrap {
+            display: none;
+        }
+        .compare-plan-box {
+            .plan-header {
+                padding: 20px 0;
+                .plan-remove {
+                    top: 0;
+                    right: 0;
                 }
             }
         }
-        .compare-plan-box {
-            background-color: #ffffff;
-            border-radius: 10px;
-            .plan-header {
-                min-height: auto;
-                padding: 20px 30px;
-            }
-            .plan-details-content {
-                padding: 20px 30px;
-                display: block;
-            }
-            .plan-details {
-                ul {
-                    list-style: none;
-                    padding: 0;
-                    margin: 0;
-                    li {
-                        border-bottom: 1px solid #e5e5e5;
-                        padding: 12px 0;
-                        &:first-child {
-                            border-top: 1px solid #e5e5e5;
-                        }
-                        .label {
-                            font-size: 14px;
-                        }
-                        .value {
-                            font-size: 17px;
-                            line-height: 1.3;
-                            margin-bottom: 0;
-                        }
-                    }
-                }
-            }
-
+        .compare-details-table {
+            display: block;
         }
     }
 }
@@ -444,6 +438,13 @@
     top: 0;
     left: 0;
     right: 0;
+    padding-left: 240px;
+    @media only screen and (max-width: 991px) {
+        padding-left: 160px;
+    }
+    @media only screen and (max-width: 767px) {
+        padding-left: 0;
+    }
     .placeholder-box {
         min-height: 120px;
         display: flex;
@@ -460,6 +461,17 @@
     }
 }
 
+.compare-plan-box-wrap {
+    padding-left: 240px;
+    @media only screen and (max-width: 991px) {
+        padding-left: 160px;
+    }
+    @media only screen and (max-width: 767px) {
+        padding-left: 0;
+    }
+}
+
+
 .compare-plan-box {
     .plan-header {
         display: flex;
@@ -468,6 +480,10 @@
         min-height: 120px;
         padding: 20px;
         position: relative;
+        @media only screen and (max-width: 1199px) {
+            display: block;
+            text-align: center;
+        }
         .thumbnail {
             max-width: 100px;
             border-right: 1px solid #e5e5e5;
@@ -475,6 +491,10 @@
             margin-right: 15px;
             display: flex;
             align-items: center;
+            @media only screen and (max-width: 1199px) {
+               margin: 0 auto 20px;
+               border-right: none;
+            }
         }
         .content {
             flex: 1;
@@ -514,7 +534,33 @@
             }
         }
     }
-    .plan-details-content {
-        display: none;
+}
+
+.compare-details-table {
+    margin-top: 50px;
+    display: none;
+    table {
+        margin-bottom: 0 !important;
+        td, th {
+            padding: 15px 20px !important;
+            vertical-align: middle;
+            font-size: 15px;
+            min-width: 170px;
+        }
+        td {
+            width: 515px;
+        }
+        th {
+            border-right: 1px solid #E9E6E6;
+         
+            width: 250px;
+        }
+        tr {
+            &:last-child {
+                th {
+                    border-bottom: none;
+                }
+            }
+        }
     }
 }
